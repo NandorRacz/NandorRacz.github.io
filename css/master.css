@@ -6,37 +6,101 @@
 .selector-container {
   margin: auto;
   text-align: center;
-  max-width: 420px;
 }
 .selector-container h1 {
+  font-size: 5em;
   font-weight: 800;
 }
 .selector-container p {
-  font-size: 1.2em;
+  font-size: 2.5em;
 }
-
-/*.restaurant-button {
-  margin: auto;
-  max-width: 90%;
-  height: 400px;
-  border: 3px solid black;
-  padding-top: 30%;
-  padding-bottom: 30%;
-  margin-bottom: 10px;
-}*/
 
 .restaurant-button {
   display: grid;
   margin: auto;
-  max-width: 90%;
-  height: 400px;
-  border: 3px solid black;
-  margin-bottom: 10px;
+  max-width: 80%;
+  margin-bottom: 20px;
   align-content: center;
+  padding-top: 25%;
+  padding-bottom: 25%;
 }
 
 .restaurant-button img {
   display: block;
   margin: auto;
-  max-width: 200px;
+  width: 50%;
+  max-width: 400px;
+}
+
+.restaurant-button .phone {
+  font-size: 2em;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.restaurant-button .description {
+  font-size: 2.5em;
+}
+
+.restaurant-button .seemore {
+  font-size: 2.5em;
+  font-style: italic;
+  text-decoration: underline;
+  color: inherit;
+}
+
+#cafe {
+  background-color: black;
+  outline: 10px solid #7861aa;
+  outline-offset: -25px;
+  color: #FFF;
+}
+
+#cafe h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #7861aa;
+}
+
+#bella {
+  border: 15px solid #277b3d;
+  outline: 15px solid red;
+  outline-offset: -40px;
+  color: #000;
+}
+
+.effect {
+    height: 200px;
+    width: 200px;
+    outline: 1px solid #000;
+    position:relative;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.effect:before {
+    content: "";
+    top:2px;
+    left:2px;
+    right:2px;
+    bottom:2px;
+   border: green 2px solid;
+    position: absolute;
+}
+
+.effect:after {
+    content: "";
+    top:6px;
+    left:6px;
+    right:6px;
+    bottom:6px;
+   border: red 2px solid;
+    position: absolute;
+}
+
+/*For computer screens*/
+@media (min-width: 1000px) {
+  body {
+    background: green;
+  }
 }
