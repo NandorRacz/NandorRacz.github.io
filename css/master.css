@@ -70,39 +70,12 @@
   color: #000;
 }
 
-.effect {
-    height: 200px;
-    width: 200px;
-    outline: 1px solid #000;
-    position:relative;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-}
-
-.effect:before {
-    content: "";
-    top:2px;
-    left:2px;
-    right:2px;
-    bottom:2px;
-   border: green 2px solid;
-    position: absolute;
-}
-
-.effect:after {
-    content: "";
-    top:6px;
-    left:6px;
-    right:6px;
-    bottom:6px;
-   border: red 2px solid;
-    position: absolute;
-}
 
 /*--------------Café page styles--------------*/
 .cafe-body {
   background-color: black;
   color: #7861aa;
+  max-width: 1000px;
 }
 
 .cafe-body .current-tab {
@@ -218,9 +191,132 @@
   margin: auto;
 }
 
+/*Bella Italia page styles*/
+.bella-body {
+  background-color: white;
+  color: black;
+  max-width: 1000px;
+}
+
+.bella-body .current-tab {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #277b3d;
+}
+
+.bella-header {
+  margin: 0;
+  text-align: center;
+}
+.bella-header h1 {
+  font-size: 5em;
+  font-weight: 800;
+  color: #277b3d;
+  text-decoration: underline;
+  text-decoration-color: red;
+  margin-bottom: 5px;
+}
+.bella-header img {
+  max-height: 250px;
+}
+
+.bella-navigation {
+  font-size: 2em;
+  color: #277b3d;
+  text-decoration: none;
+  display: grid;
+  grid-column-gap: 5px;
+  margin-bottom: 15px;
+}
+.bella-navigation button {
+  background: none;
+  outline: none;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: none;
+  color: inherit;
+}
+.bella-nav-menu {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.bella-nav-info {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.bella-nav-posts {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.bella-nav-reviews {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.bella-nav-history {
+  grid-row-start: 1;
+  grid-column-start:5;
+  grid-column-end: 6;
+}
+
+.bella-menu, .bella-info, .bella-posts, .bella-reviews, .bella-history {
+  margin: auto;
+  width: 80%;
+  padding: 40px;
+  border: 10px solid #277b3d;
+  outline: 10px solid red;
+  outline-offset: -30px;
+}
+.bella-menu h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 4em;
+  text-decoration: underline;
+}
+.bella-menu p {
+  color: black;
+  font-size: 2em;
+}
+.bella-menu table, .bella-info table {
+  font-size: 2.2em;
+  text-align: left;
+  width: 100%;
+  line-height: 1;
+}
+.bella-menu td {
+  border-bottom: 2px dotted black;
+}
+.bella-menu span {
+  font-size: 0.7em;
+}
+
+.bella-info {
+  display: grid;
+  align-content: center;
+  color: black;
+}
+.bella-info table {
+  text-align: center;
+}
+.bella-info iframe {
+  margin: 25px auto;
+}
+.bella-info a {
+  color: #277b3d;
+}
+
+.bella-posts {
+  margin: auto;
+}
+
 /*For computer screens*/
 @media (min-width: 1000px) {
   body {
-    background: green;
+    background: gray;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
