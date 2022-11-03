@@ -3,6 +3,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/*--------------Main page styles--------------*/
 .selector-container {
   margin: auto;
   text-align: center;
@@ -96,6 +97,125 @@
     bottom:6px;
    border: red 2px solid;
     position: absolute;
+}
+
+/*--------------Café page styles--------------*/
+.cafe-body {
+  background-color: black;
+  color: #7861aa;
+}
+
+.cafe-body .current-tab {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.cafe-header {
+  margin: 0;
+  text-align: center;
+}
+.cafe-header h1 {
+  font-size: 5em;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: white;
+  margin-bottom: 5px;
+}
+
+.cafe-navigation {
+  font-size: 2em;
+  text-decoration: none;
+  display: grid;
+  grid-column-gap: 5px;
+  margin-bottom: 15px;
+}
+.cafe-navigation button {
+  background: none;
+  outline: none;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: none;
+  color: inherit;
+}
+.cafe-nav-menu {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.cafe-nav-info {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.cafe-nav-posts {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.cafe-nav-reviews {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.cafe-nav-events {
+  grid-row-start: 1;
+  grid-column-start:5;
+  grid-column-end: 6;
+}
+
+.cafe-menu, .cafe-info, .cafe-posts, .cafe-reviews, .cafe-events {
+  margin: auto;
+  width: 80%;
+  border: 10px solid #7861aa;
+  padding: 15px;
+}
+.cafe-menu h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 4em;
+  text-decoration: underline;
+}
+.cafe-menu p {
+  color: white;
+  font-size: 2em;
+}
+.cafe-menu table, .cafe-info table {
+  font-size: 2.2em;
+  text-align: left;
+  width: 100%;
+}
+.cafe-menu th {
+  text-decoration: underline;
+}
+.cafe-menu td {
+  color: white;
+  text-align: center;
+}
+.cafe-menu tr > :first-child {
+  text-align: left;
+}
+.cafe-menu table ul {
+  text-align: left;
+}
+
+.cafe-info {
+  display: grid;
+  align-content: center;
+  color: white;
+}
+.cafe-info table {
+  text-align: center;
+}
+.cafe-info iframe {
+  margin: 25px auto;
+}
+.cafe-info a {
+  color: white;
+}
+
+.cafe-posts {
+  margin: auto;
 }
 
 /*For computer screens*/
