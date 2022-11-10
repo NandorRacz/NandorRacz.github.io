@@ -156,49 +156,6 @@
    height: auto;
  }
 
-/* OLD MENU
-.cafe-navigation {
-  font-size: 2em;
-  text-decoration: none;
-  display: grid;
-  grid-column-gap: 5px;
-  margin-bottom: 15px;
-}
-.cafe-navigation button {
-  background: none;
-  outline: none;
-  text-decoration: none;
-  font-size: 1.5em;
-  border: none;
-  color: inherit;
-}
-.cafe-nav-menu {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.cafe-nav-info {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-.cafe-nav-posts {
-  grid-row-start: 1;
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-.cafe-nav-reviews {
-  grid-row-start: 1;
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-.cafe-nav-events {
-  grid-row-start: 1;
-  grid-column-start:5;
-  grid-column-end: 6;
-} */
-
-
 .cafe-menu, .cafe-info, .cafe-posts, .cafe-reviews, .cafe-events, .cafe-discounts {
   margin: auto;
   width: 90%;
@@ -253,6 +210,16 @@
 }
 .cafe-info a {
   color: white;
+}
+
+.cafe-discounts h2{
+  font-size: 3.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cafe-discounts td {
+  color: white;
+  font-size: 3em;
 }
 
 /*--------------Bella Italia page styles--------------*/
@@ -339,7 +306,7 @@
    font-size: 10px;
  }
  .bella-nav-list button {
-   font-size: 3.5em;
+   font-size: 2.5em;
    background: none;
    border: none;
  }
@@ -393,10 +360,15 @@
   color: #277b3d;
 }
 
-.bella-posts {
-  margin: auto;
+.bella-discounts h2{
+  font-size: 3.5em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
+.bella-discounts td {
+  color: black;
+  font-size: 3em;
+}
 /*--------------Toggle menu styles--------------*/
 
 

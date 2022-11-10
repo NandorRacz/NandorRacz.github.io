@@ -21,6 +21,7 @@ $(document).ready(function(){
     $("#events").removeClass("current-tab");
     $("#reviews").removeClass("current-tab");
     $("#discounts").removeClass("current-tab");
+    $(".bella-nav-list").removeClass('bella-nav-list-show');
   });
 
   $("#info").click(function(){
@@ -35,6 +36,7 @@ $(document).ready(function(){
     $("#reviews").removeClass("current-tab");
     $("#discounts").removeClass("current-tab");
     $("#discounts").removeClass("current-tab");
+    $(".bella-nav-list").removeClass('bella-nav-list-show');
   });
 
   $("#events").click(function(){
@@ -48,6 +50,7 @@ $(document).ready(function(){
     $("#menu").removeClass("current-tab");
     $("#reviews").removeClass("current-tab");
     $("#discounts").removeClass("current-tab");
+    $(".bella-nav-list").removeClass('bella-nav-list-show');
   });
 
   $("#reviews").click(function(){
@@ -61,6 +64,7 @@ $(document).ready(function(){
     $("#events").removeClass("current-tab");
     $("#menu").removeClass("current-tab");
     $("#discounts").removeClass("current-tab");
+    $(".bella-nav-list").removeClass('bella-nav-list-show');
   });
 
   $("#discounts").click(function(){
@@ -74,6 +78,7 @@ $(document).ready(function(){
     $("#events").removeClass("current-tab");
     $("#reviews").removeClass("current-tab");
     $("#menu").removeClass("current-tab");
+    $(".bella-nav-list").removeClass('bella-nav-list-show');
   });
 
 });
