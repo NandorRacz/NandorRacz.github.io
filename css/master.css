@@ -61,6 +61,7 @@
   font-size: 3.5em;
   font-weight: 700;
   color: #7861aa;
+  margin-bottom: 0;
 }
 
 #bella {
@@ -68,6 +69,10 @@
   outline: 15px solid red;
   outline-offset: -40px;
   color: #000;
+}
+
+#cafe p, #bella p {
+  margin-top: 5px;
 }
 
 
@@ -93,9 +98,65 @@
   font-weight: 800;
   text-decoration: underline;
   text-decoration-color: white;
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+.cafe-header h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: white;
   margin-bottom: 5px;
+  margin-top: 0;
+}
+.cafe-header a {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 0;
 }
 
+.cafe-navigation {
+  width: 100%;
+}
+ #cafe-nav-button {
+   width: 100%;
+   background-color: #7861aa;
+   border: none;
+ }
+ #cafe-nav-button img{
+  height: 55px;
+  margin-right: 10px;
+ }
+ .cafe-nav-list {
+   background-color: #7861aa;
+   margin-bottom: 20px;
+   padding: 0;
+   text-align: left;
+   height: 0;
+   overflow: hidden;
+   transition: .3s all;
+ }
+ .cafe-nav-list ul {
+   margin: 0;
+ }
+ .cafe-nav-list li {
+   list-style-type: none;
+   color: black;
+ }
+ .cafe-nav-list li::marker{
+   font-size: 10px;
+ }
+ .cafe-nav-list button {
+   font-size: 3.5em;
+   background: none;
+   border: none;
+ }
+ .cafe-nav-list-show {
+   height: auto;
+ }
+
+/* OLD MENU
 .cafe-navigation {
   font-size: 2em;
   text-decoration: none;
@@ -135,11 +196,12 @@
   grid-row-start: 1;
   grid-column-start:5;
   grid-column-end: 6;
-}
+} */
 
-.cafe-menu, .cafe-info, .cafe-posts, .cafe-reviews, .cafe-events {
+
+.cafe-menu, .cafe-info, .cafe-posts, .cafe-reviews, .cafe-events, .cafe-discounts {
   margin: auto;
-  width: 80%;
+  width: 90%;
   border: 10px solid #7861aa;
   padding: 15px;
 }
@@ -168,8 +230,14 @@
 .cafe-menu tr > :first-child {
   text-align: left;
 }
-.cafe-menu table ul {
+.cafe-menu-bold tr > :first-child {
+  font-weight: 700;
+}
+.cafe-menu table ol {
   text-align: left;
+}
+.cafe-menu table ol ::marker {
+  font-weight: 700;
 }
 
 .cafe-info {
@@ -187,11 +255,7 @@
   color: white;
 }
 
-.cafe-posts {
-  margin: auto;
-}
-
-/*Bella Italia page styles*/
+/*--------------Bella Italia page styles--------------*/
 .bella-body {
   background-color: white;
   color: black;
@@ -219,6 +283,20 @@
 .bella-header img {
   max-height: 250px;
 }
+.bella-header h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.bella-header a {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
 
 .bella-navigation {
   font-size: 2em;
@@ -228,43 +306,50 @@
   grid-column-gap: 5px;
   margin-bottom: 15px;
 }
-.bella-navigation button {
-  background: none;
-  outline: none;
-  text-decoration: none;
-  font-size: 1.5em;
-  border: none;
-  color: inherit;
-}
-.bella-nav-menu {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.bella-nav-info {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-.bella-nav-posts {
-  grid-row-start: 1;
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-.bella-nav-reviews {
-  grid-row-start: 1;
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-.bella-nav-history {
-  grid-row-start: 1;
-  grid-column-start:5;
-  grid-column-end: 6;
-}
 
-.bella-menu, .bella-info, .bella-posts, .bella-reviews, .bella-history {
+.bella-navigation {
+  width: 100%;
+}
+ #bella-nav-button {
+   width: 100%;
+   background-color: #277b3d;
+   border: none;
+ }
+ #bella-nav-button img{
+  height: 55px;
+  margin-right: 10px;
+ }
+ .bella-nav-list {
+   background-color: #277b3d;
+   margin-bottom: 20px;
+   padding: 0;
+   text-align: left;
+   height: 0;
+   overflow: hidden;
+   transition: .3s all;
+ }
+ .bella-nav-list ul {
+   margin: 0;
+ }
+ .bella-nav-list li {
+   list-style-type: none;
+   color: black;
+ }
+ .bella-nav-list li::marker{
+   font-size: 10px;
+ }
+ .bella-nav-list button {
+   font-size: 3.5em;
+   background: none;
+   border: none;
+ }
+ .bella-nav-list-show {
+   height: auto;
+ }
+
+.bella-menu, .bella-info, .bella-events, .bella-reviews, .bella-discounts {
   margin: auto;
-  width: 80%;
+  width: 85%;
   padding: 40px;
   border: 10px solid #277b3d;
   outline: 10px solid red;
@@ -311,6 +396,9 @@
 .bella-posts {
   margin: auto;
 }
+
+/*--------------Toggle menu styles--------------*/
+
 
 /*For computer screens*/
 @media (min-width: 1000px) {

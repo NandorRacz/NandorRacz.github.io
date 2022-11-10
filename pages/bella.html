@@ -16,68 +16,625 @@
 </head>
 <body class="bella-body">
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="RfR7HdWn"></script>
 
   <div class="bella-header">
-    <!-- <h1>Bella Italia AAU</h1> -->
     <img src="../img/bellaitalia-logo.png" alt="">
+    <h2>Myrdalstraede 268</h2>
+    <a class="phone" href="tel:004598153488">Tlf:+45 98 15 34 88</a>
     <div class="bella-navigation">
+      <button id="bella-nav-button"><img src="../img/menu.png" alt=""></button>
+      <div class="bella-nav-list">
+        <ul>
+          <li>
+            <button id="menu">Menu</button>
+          </li>
+          <li>
+            <button id="info">Contact</button>
+          </li>
+          <li>
+            <button id="discounts">Discounts</button>
+          </li>
+          <li>
+            <button id="reviews">Reviews</button>
+          </li>
+          <li>
+            <button id="events">Events</button>
+          </li>
+        </ul>
+
+    <!-- OLD MENU
       <div class="bella-nav-menu">
         <button id="menu">Menu</button>
       </div>
       <div class="bella-nav-info">
-        <button id="info">Info</button>
+        <button id="info">Contact</button>
       </div>
-      <div class="bella-nav-posts">
-        <button id="posts">Posts</button>
+      <div class="bella-nav-discounts">
+        <button id="info">Discounts</button>
+      </div>
+      <div class="bella-nav-events">
+        <button id="info">Events</button>
       </div>
       <div class="bella-nav-reviews">
         <button id="reviews">Reviews</button>
-      </div>
-      <div class="bella-nav-history">
-        <button id="history">History</button>
-      </div>
+      </div> -->
     </div>
   </div>
 
   <div class="bella-menu">
     <h2>Pizza</h2>
+      <table class="bella-menu-pizza">
+        <tr>
+          <td>1.</td>
+          <td>Margherita<br><span class="toppings">tomato and cheese</span></td>
+          <td>55.-</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Hawaii<br><span class="toppings">tomato, cheese, ham, pineapple</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Capricciosa<br><span class="toppings">tomato, cheese, ham, mushrooms</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>San Marino<br><span class="toppings">tomato, cheese, kebab, friench fries, dressing</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Vesuvio<br><span class="toppings">tomato, cheese, ham, paprika</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>Venezia<br><span class="toppings">tomato, cheese, ground beef, bacon, pepperoni</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td>Cannibale<br><span class="toppings">tomato, cheese, ground beef</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td>Pepperoni<br><span class="toppings">tomato, cheese, pepperoni</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>9.</td>
+          <td>Vegetale<br><span class="toppings">tomato, cheese, mushrooms, paprika, vegetable mix, pinapple, onion</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>10.</td>
+          <td>Husets<br><span class="toppings">tomato, cheese, kebab, bernaise sauce, egg, onion</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>11.</td>
+          <td>Alfredo<br><span class="toppings">tomato, cheese, kebab, meatsauce, jalapenos, olives</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>12.</td>
+          <td>Indiana<br><span class="toppings">tomato, cheese, ham, pepperoni</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>13.</td>
+          <td>Sicilie (spicy)<br><span class="toppings">tomato, cheese, kebab, meatsauce, ham, onion, paprika, chili</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>14.</td>
+          <td>Pizza Special<br><span class="toppings">tomato, cheese, prawns, tuna, crab, Rhode Island sauce</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>15.</td>
+          <td>Gorgonzola<br><span class="toppings">tomato, cheese, kebab. gorgonzola, mushrooms</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>16.</td>
+          <td>Chievo<br><span class="toppings">tomato, cheese, chicken, mushrooms</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>17.</td>
+          <td>Funghi<br><span class="toppings">tomato, cheese, sucuk, onions, paprika, jalapenos</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>18.</td>
+          <td>Sucuk<br><span class="toppings">tomato, cheese, kebab, ground beef, sucuk</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>19.</td>
+          <td>Mexicano<br><span class="toppings">tomato, cheese, ground beef, paprika, tabasco, onion</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>20.</td>
+          <td>Pescatora<br><span class="toppings">tomato, cheese, kebab, ground beef, sausages</span></td>
+          <td>80.-</td>
+        </tr>
+        <tr>
+          <td>21.</td>
+          <td>Sorento<br><span class="toppings">tomato, cheese, ground beef, chicken, jalapenos</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>22.</td>
+          <td>Italia<br><span class="toppings">tomato, cheese, kebab, mushrooms, paprika</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>23.</td>
+          <td>Maffioza<br><span class="toppings">tomato, cheese, chicken, banana, pineapple, curry</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>24.</td>
+          <td>Carbonara<br><span class="toppings">tomato, cheese, bacon, kebab, paprika</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>25.</td>
+          <td>Montanara<br><span class="toppings">tomato, cheese, ground beef, mushrooms, onion, garlic</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>26.</td>
+          <td>Bella Donna<br><span class="toppings">tomato, cheese, kebab, mushrooms, onion, chili</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>27.</td>
+          <td>Roma<br><span class="toppings">tomato, cheese, ham, ground beef, onion</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>28.</td>
+          <td>Caruso<br><span class="toppings">tomato, cheese, ham, bacon, onion</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>29.</td>
+          <td>Bella Italia Special<br><span class="toppings">tomato, cheese, kebab, onion, pepperoni, ground beef</span></td>
+          <td>80.-</td>
+        </tr>
+        <tr>
+          <td>30.</td>
+          <td>Pizza Bolognese<br><span class="toppings">tomato, cheese, meatsauce, onion</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>31.</td>
+          <td>Pizza Kebab<br><span class="toppings">tomato, cheese, onion, pepperoni, kebab, salad, cucumber, fresh tomatoes, dressing</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>32.</td>
+          <td>Napoli<br><span class="toppings">tomato, cheese, ground beef, pepperoni, sausages</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>33.</td>
+          <td>Lazio<br><span class="toppings">tomato, cheese, chicken, pineapple, curry, fresh tomatoes, paprika</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>34.</td>
+          <td>Milano<br><span class="toppings">tomato, cheese, kebab, ground beef, sausages, mushrooms, chili, garlic</span></td>
+          <td>80.-</td>
+        </tr>
+        <tr>
+          <td>35.</td>
+          <td>Gorgini<br><span class="toppings">(folded pizza) tomato, cheese, chili, onion, ground beef, salad, fresh tomatoes, cucumber, dressing</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>36.</td>
+          <td>Verona<br><span class="toppings">tomato, cheese, meatsauce, pepperoni, pineapple</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>37.</td>
+          <td>Mamma Mia<br><span class="toppings">tomato, cheese, ground beef, bacon, gorgonzola</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>38.</td>
+          <td>Klingenberg Special<br><span class="toppings">tomato, cheese, ham, bacon, onion, cucumber, fresh tomatoes, salad, dressing</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>39.</td>
+          <td>Lecce<br><span class="toppings">tomato, cheese, chicken, ground beef, cucumber, fresh tomatoes, onion, salad, dressing</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>40.</td>
+          <td>Rinas<br><span class="toppings">tomato, cheese, ground beef, sausages, onion</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>41.</td>
+          <td>Italian Kebab<br><span class="toppings">(folded pizza) tomato, kebab, salad, cucumber, fresh tomatoes, onion, dressing</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>42.</td>
+          <td>Amigo<br><span class="toppings">taomto, cheese, pepperoni, ground beef, pineapple</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>43.</td>
+          <td>Veneto<br><span class="toppings">tomato, cheese, kebab, bacon, pepperoni</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>44.</td>
+          <td>Marinara<br><span class="toppings">tomato, cheese, pepperoni, sausages, bacon</span></td>
+          <td>80.-</td>
+        </tr>
+        <tr>
+          <td>45.</td>
+          <td>Regina<br><span class="toppings">tomato, cheese, ham, sausages</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>46.</td>
+          <td>Roberto<br><span class="toppings">tomato, cheese, ham, pepperoni, kebab</span></td>
+          <td>80.-</td>
+        </tr>
+        <tr>
+          <td>47.</td>
+          <td>Torino<br><span class="toppings">tomato, cheese, ham, bacon, ground beef</span></td>
+          <td>80.-</td>
+        </tr>
+        <tr>
+          <td>48.</td>
+          <td>Mozzarella<br><span class="toppings">tomato, cheese, fresh tomatoes, mozzarella</span></td>
+          <td>65.-</td>
+        </tr>
+      </table>
+      <h2>Folded pizza</h2>
       <table>
         <tr>
-          <td>Margherita<br><span class="toppings">tomato and cheese</span></td>
+          <td>49.</td>
+          <td>Pizza sandwich<br><span class="toppings">french fries, salad, dressing</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>50.</td>
+          <td>Ciao Ciao<br><span class="toppings">tomato, cheese, kebab, onion, bearnaise sauce</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>51.</td>
+          <td>Empoli<br><span class="toppings">tomato, cheese, soaghetti, meatsauce</span></td>
+          <td>70.-</td>
+        </tr>
+        <tr>
+          <td>52.</td>
+          <td>Calzone<br><span class="toppings">tomato, cheese, ham</span></td>
+          <td>70.-</td>
+        </tr>
+      </table>
+      <h2>Kids Pizza</h2>
+      <table>
+        <tr>
+          <td>53.</td>
+          <td>Ham Pizza<br><span class="toppings">tomato, cheese, ham</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>54.</td>
+          <td>Sausages Pizza<br><span class="toppings">tomato, cheese, sausages</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>55.</td>
+          <td>Kids Pepperoni<br><span class="toppings">tomato, cheese, pepperoni</span></td>
+          <td>50.-</td>
+        </tr>
+      </table>
+      <div class="extra-toppings">
+        <h2>EXTRA TOPPINGS</h2>
+        <p>All meat/cheese: 10 kr pr. part</p>
+        <p>Dressing: 5 kr pr. part - Other extras: 5 kr pr. part</p>
+      </div>
+      <h2>Salad</h2>
+      <table>
+        <tr>
+          <td>56.</td>
+          <td>Tuna salad<br><span class="toppings">tuna, tomato cucumber, onion, salad, dressing, bread</span></td>
           <td>55.-</td>
         </tr>
         <tr>
-          <td>Hawaii<br><span class="toppings">tomato, cheese, ham, pineapple</span></td>
-          <td>65.-</td>
-        </tr>
-        <tr>
-          <td>Capricciosa<br><span class="toppings">tomato, cheese, ham, mushrooms</span></td>
-          <td>65.-</td>
-        </tr>
-        <tr>
-          <td>Margherita<br><span class="toppings">tomato and cheese</span></td>
+          <td>57.</td>
+          <td>Chicken salad<br><span class="toppings">chicken, cucumber, onion, salad, dressing, bread</span></td>
           <td>55.-</td>
         </tr>
         <tr>
-          <td>Hawaii<br><span class="toppings">tomato, cheese, ham, pineapple</span></td>
-          <td>65.-</td>
-        </tr>
-        <tr>
-          <td>Capricciosa<br><span class="toppings">tomato, cheese, ham, mushrooms</span></td>
-          <td>65.-</td>
-        </tr>
-        <tr>
-          <td>Margherita<br><span class="toppings">tomato and cheese</span></td>
+          <td>58.</td>
+          <td>Bella Italia salad<br><span class="toppings">kebab, onion, mushrooms, tomato, cucumber, dressing, bread</span></td>
           <td>55.-</td>
         </tr>
         <tr>
-          <td>Hawaii<br><span class="toppings">tomato, cheese, ham, pineapple</span></td>
+          <td>59.</td>
+          <td>Greek Farmer salad<br><span class="toppings">feta cheese, olives, tomato, cucumber, onion, salad, dressing, bread</span></td>
+          <td>55.-</td>
+        </tr>
+      </table>
+      <h2>Kebab</h2>
+      <h3>with salad, tomato, cucumber, onion, dressing</h3>
+      <table>
+        <tr>
+          <td>60.</td>
+          <td>Durum - Chicken or kebab</td>
+          <td>55.-</td>
+        </tr>
+        <tr>
+          <td>61.</td>
+          <td>Pita-Kebab</td>
+          <td>45.-</td>
+        </tr>
+        <tr>
+          <td>62.</td>
+          <td>Chicken-Kebab</td>
+          <td>45.-</td>
+        </tr>
+        <tr>
+          <td>63.</td>
+          <td>Turkey-Kebab</td>
+          <td>45.-</td>
+        </tr>
+        <tr>
+          <td>64.</td>
+          <td>Bella-Kebab</td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>65.</td>
+          <td>Mix-Kebab - Chicken or kebab</td>
+          <td>55.-</td>
+        </tr>
+        <tr>
+          <td>66.</td>
+          <td>Tuna-Kebab</td>
+          <td>45.-</td>
+        </tr>
+        <tr>
+          <td>67.</td>
+          <td>Durum menu<br><span class="toppings">w. french fries + soda</span></td>
+          <td>85.-</td>
+        </tr>
+        <tr>
+          <td>68.</td>
+          <td>Pita menu<br><span class="toppings">w. french fries + soda</span></td>
+          <td>80.-</td>
+        </tr>
+      </table>
+      <h2>Burgers / French Fries</h2>
+      <table>
+        <tr>
+          <td>69.</td>
+          <td>Bigburger menu w. french fries<br><span class="toppings">salad, cucumber, tomato, onion, dressing + can cola</span></td>
+          <td>80.-</td>
+        </tr>
+        <tr>
+          <td>70.</td>
+          <td>Bigburger</td>
+          <td>60.-</td>
+        </tr>
+        <tr>
+          <td>71.</td>
+          <td>Cheeseburger</td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>72.</td>
+          <td>BaconCheeseburger</td>
+          <td>55.-</td>
+        </tr>
+        <tr>
+          <td>73.</td>
+          <td>Chickenburger</td>
+          <td>45.-</td>
+        </tr>
+        <tr>
+          <td>74.</td>
+          <td>Baconburger</td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>75.</td>
+          <td>Jumboburger</td>
+          <td>55.-</td>
+        </tr>
+        <tr>
+          <td>76.</td>
+          <td>Jumboburger menu (menu like 69.)</td>
+          <td>85.-</td>
+        </tr>
+        <tr>
+          <td>77.</td>
+          <td>Beefburger (homemade)</td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>78.</td>
+          <td>French fries (small)</td>
+          <td>25.-</td>
+        </tr>
+        <tr>
+          <td>79.</td>
+          <td>French fries (large)</td>
+          <td>30.-</td>
+        </tr>
+      </table>
+      <h2>Grill</h2>
+      <table>
+        <tr>
+          <td>80.</td>
+          <td>1/2 Chicken</td>
+          <td>45.-</td>
+        </tr>
+        <tr>
+          <td>81.</td>
+          <td>1/2 Chicken<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>82.</td>
+          <td>Fish fillet<br><span class="toppings">w. french fries, salad, remoulade</span></td>
           <td>65.-</td>
         </tr>
         <tr>
-          <td>Capricciosa<br><span class="toppings">tomato, cheese, ham, mushrooms</span></td>
+          <td>83.</td>
+          <td>Bella beef (ground beef)<br><span class="toppings">w. french fries, salad, bearnaise sauce</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>84.</td>
+          <td>Fried chicken<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
           <td>65.-</td>
+        </tr>
+        <tr>
+          <td>85.</td>
+          <td>Chilli & Cheese and nuggets<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>65.-</td>
+        </tr>
+        <tr>
+          <td>86.</td>
+          <td>Kebab mix<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>87.</td>
+          <td>Chicken mix<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>88.</td>
+          <td>Chicken hot wings<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>65.-</td>
+        </tr>
+        <tr>
+          <td>89.</td>
+          <td>Chicken nuggets<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>65.-</td>
+        </tr>
+        <tr>
+          <td>90.</td>
+          <td>Sausage mix<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>75.-</td>
+        </tr>
+        <tr>
+          <td>91.</td>
+          <td>Bella-Box (chicken or kebab)<br><span class="toppings">w. french fries, dressing</span></td>
+          <td>65.-</td>
+        </tr>
+      </table>
+      <h2>Lunch offers <br> From 11-15:</h2>
+      <table>
+        <tr>
+          <td>2.</td>
+          <td>Hawaii<br><span class="toppings">tomato, cheese, ham, pineapple</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Capricciosa<br><span class="toppings">tomato, cheese, ham, mushrooms</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Vesuvio<br><span class="toppings">tomato, cheese, ham, paprika</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td>Cannibale<br><span class="toppings">tomato, cheese, ground beef</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td>Pepperoni<br><span class="toppings">tomato, cheese, pepperoni</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>12.</td>
+          <td>Indiana<br><span class="toppings">tomato, cheese, ham, pepperoni</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>16.</td>
+          <td>Chievo<br><span class="toppings">tomato, cheese, chicken, mushrooms</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>30.</td>
+          <td>Pizza Bolognese<br><span class="toppings">tomato, cheese, meatsauce, onion</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>48.</td>
+          <td>Mozzarella<br><span class="toppings">tomato, cheese, fresh tomatoes, mozzarella</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>84.</td>
+          <td>Fried chicken<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>85.</td>
+          <td>Chilli & Cheese and nuggets<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>88.</td>
+          <td>Chicken hot wings<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>89.</td>
+          <td>Chicken nuggets<br><span class="toppings">w. french fries, salad, remoulade/ketchup</span></td>
+          <td>50.-</td>
+        </tr>
+        <tr>
+          <td>91.</td>
+          <td>Bella-Box (chicken or kebab)<br><span class="toppings">w. french fries, dressing</span></td>
+          <td>50.-</td>
+        </tr>
+      </table>
+      <div class="extra-toppings">
+        <h2>EXTRA TOPPINGS</h2>
+        <p>All meat/cheese: 10 kr pr. part</p>
+        <p>Dressing: 5 kr pr. part - Other extras: 5 kr pr. part</p>
+      </div>
+      <h2>Drinks</h2>
+      <table>
+        <tr>
+          <td>½ liter soda<br><span class="toppings">Cola, Cola Light, Fanta, Sprite</span></td>
+          <td>25.-</td>
+        </tr>
+        <tr>
+          <td>Soda can 0,33l<br><span class="toppings">Cola, Cola Light, Fanta, Sprite</span></td>
+          <td>15.-</td>
+        </tr>
+        <tr>
+          <td>Water</td>
+          <td>15.-</td>
         </tr>
       </table>
   </div>
@@ -93,14 +650,14 @@
         <td>12:00 - 21:00</td>
       </tr>
     </table>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d135.75843641609026!2d9.978039821874733!3d57.01499528379763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464eccd73750deaf%3A0xedc4e2aedbb293d3!2sBella%20Italia!5e0!3m2!1sda!2sdk!4v1667437525181!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d135.75843641609026!2d9.978039821874733!3d57.01499528379763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464eccd73750deaf%3A0xedc4e2aedbb293d3!2sBella%20Italia!5e0!3m2!1sda!2sdk!4v1667437525181!5m2!1sda!2sdk" width="100%" height="700" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <table>
       <tr>
         <td>Myrdalstraede 268</td>
       </tr>
       <tr>
         <td>
-          <a class="phone" href="tel:98158282">Tlf: 98 15 82 82</a>
+          <a class="phone" href="tel:004598153488">Tlf:+45 98 15 34 88</a>
         </td>
       </tr>
       <tr>
@@ -109,15 +666,15 @@
     </table>
   </div>
 
-  <div class="bella-posts">
-    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100041258298802" data-tabs="timeline, messages" data-width="500" data-height="900" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100041258298802" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100041258298802">Bella Italia AAU</a></blockquote></div>
-  </div>
-
   <div class="bella-reviews">
     <h2>Reviews will go here</h2>
   </div>
 
-  <div class="bella-history">
-    <h2>Restaurant history and interesting stuff will go here</h2>
+  <div class="bella-discounts">
+    <h2>Discounts will go here</h2>
+  </div>
+
+  <div class="bella-events">
+    <h2>Event related stuff will go here</h2>
   </div>
 </html>

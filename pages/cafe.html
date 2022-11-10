@@ -16,19 +16,39 @@
 </head>
 <body class="cafe-body">
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="Iw4AlVtA"></script>
 
   <div class="cafe-header">
     <h1>Café Campus AAU</h1>
+    <h2>Myrdalstraede 268</h2>
+    <a class="phone" href="tel:004598158282">Tlf:+45 98 15 82 82</a>
     <div class="cafe-navigation">
+      <button id="cafe-nav-button"><img src="../img/menu.png" alt=""></button>
+      <div class="cafe-nav-list">
+        <ul>
+          <li>
+            <button id="menu">Menu</button>
+          </li>
+          <li>
+            <button id="info">Contact</button>
+          </li>
+          <li>
+            <button id="discounts">Discounts</button>
+          </li>
+          <li>
+            <button id="reviews">Reviews</button>
+          </li>
+          <li>
+            <button id="events">Events</button>
+          </li>
+        </ul>
+      </div>
+
+    <!-- OLD MENU
       <div class="cafe-nav-menu">
         <button id="menu">Menu</button>
       </div>
       <div class="cafe-nav-info">
-        <button id="info">Info</button>
-      </div>
-      <div class="cafe-nav-posts">
-        <button id="posts">Posts</button>
+        <button id="info">Contact</button>
       </div>
       <div class="cafe-nav-reviews">
         <button id="reviews">Reviews</button>
@@ -36,14 +56,16 @@
       <div class="cafe-nav-events">
         <button id="events">Events</button>
       </div>
+     -->
+
     </div>
   </div>
 
   <div class="cafe-menu">
-    <h2>Sandwiches</h2>
+    <h2>SANDWICHES</h2>
       <table>
         <tr>
-          <td><ul>
+          <td><ol>
             <li>Chicken & Bacon</li>
             <li>Chicken & Pineapple</li>
             <li>Ham & Cheese</li>
@@ -53,8 +75,8 @@
             <li>Salmon & Asparagus</li>
             <li>Shawarma</li>
 
-          </ul></td>
-          <td><ul>
+          </ol></td>
+          <td><ol start="9">
             <li>Chicken & Cheese</li>
             <li>Vegan</li>
             <li>Egg & Bacon</li>
@@ -62,12 +84,12 @@
             <li>Meatballs & Red cab.</li>
             <li>Falafel & Jalapenos</li>
             <li>Chicken & Salsa</li>
-          </ul></td>
+          </ol></td>
         </tr>
       </table>
-      <table>
+      <table class="cafe-menu-bold">
         <tr>
-          <th>Prices</th>
+          <th>SANDWICH PRICES</th>
           <th>Small</th>
           <th>Medium</th>
           <th>Large</th>
@@ -75,38 +97,122 @@
         </tr>
         <tr>
           <td>Wheat</td>
-          <td>35</td>
-          <td>40</td>
-          <td>45</td>
-          <td>80</td>
+          <td>35,-</td>
+          <td>40,-</td>
+          <td>45,-</td>
+          <td>80,-</td>
         </tr>
         <tr>
           <td>Whole grain</td>
-          <td>37</td>
-          <td>42</td>
-          <td>47</td>
-          <td>86</td>
+          <td>37,-</td>
+          <td>42,-</td>
+          <td>47,-</td>
+          <td>86,-</td>
         </tr>
       </table>
       <p>All sandwiches are made with salad, tomato, cucumber, onion, mayo, and up to two dressings. (thousand island, garlic, curry, creme fraiche, dill, chili or salsa)</p>
-    <h2>Hot Dishes</h2>
-      <table>
-        <tr>
-          <td>Chicken in Peanut Sauce</td>
-          <td>40</td>
-        </tr>
-        <tr>
-          <td>Pad Kra Paw</td>
-          <td>40</td>
-        </tr><tr>
-          <td>Roasted Chicken</td>
-          <td>40</td>
-        </tr><tr>
-          <td>Shawarma Box</td>
-          <td>40</td>
-        </tr>
-      </table>
-      <p>All boxes are served with rice</p>
+      <h2>HOT DISHES</h2>
+        <table class="cafe-menu-bold">
+          <tr>
+            <td>Chicken in Peanut Sauce</td>
+            <td>40,-</td>
+          </tr>
+          <tr>
+            <td>Pad Kra Paw</td>
+            <td>40,-</td>
+          </tr><tr>
+            <td>Roasted Chicken</td>
+            <td>40,-</td>
+          </tr><tr>
+            <td>Shawarma Box</td>
+            <td>40,-</td>
+          </tr>
+        </table>
+        <p>All boxes are served with rice</p>
+      <h2>SNACKS</h2>
+        <table class="cafe-menu-bold">
+          <tr>
+            <td>Nachos</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td style="font-weight:400;">-with cheese, salsa and guacamole</td>
+            <td>45,-</td>
+          </tr><tr>
+            <td style="font-weight:400;">-with cheese, chicken, salsa and guacamole</td>
+            <td>55,-</td>
+          </tr><tr>
+            <td>Muffin with whipped cream</td>
+            <td>15,-</td>
+          </tr>
+        </table>
+        <table class="cafe-menu-bold">
+          <tr>
+            <th>BEVERAGES</th>
+            <th style="color:white;">33cl</th>
+            <th style="color:white;">0,5l</th>
+            <th style="text-align:center;">SALADBAR</th>
+          </tr>
+          <tr>
+            <td>Soda</td>
+            <td>15,-</td>
+            <td>25,-</td>
+            <td style="text-decoration:underline; text-align:center;">Fill a container</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td></td>
+            <td>15,-</td>
+            <td style="font-weight:700;">33,-</td>
+          </tr>
+          <tr>
+            <td>Red Bull</td>
+            <td>17,-</td>
+            <td></td>
+          </tr>
+        </table>
+        <table class="cafe-menu-bold">
+          <tr>
+            <th>COFFEE</th>
+            <th style="color:white;">Small</th>
+            <th style="color:white;">Large</th>
+          </tr>
+          <tr>
+            <td>Americano</td>
+            <td>20,-</td>
+            <td>28,-</td>
+          </tr>
+          <tr>
+            <td>Café Latte</td>
+            <td>20,-</td>
+            <td>28,-</td>
+          </tr>
+          <tr>
+            <td>Espresso</td>
+            <td>18,-</td>
+            <td>26,-</td>
+          </tr>
+          <tr>
+            <td>Cappucino</td>
+            <td>20,-</td>
+            <td>28,-</td>
+          </tr>
+          <tr>
+            <td>Hot Cocoa w. whipped cream</td>
+            <td>20,-</td>
+            <td>25,-</td>
+          </tr>
+          <tr>
+            <td>Coffee</td>
+            <td>8,-</td>
+            <td>12,-</td>
+          </tr>
+          <tr>
+            <td>Coffee -refill all day</td>
+            <td>19,-</td>
+            <td></td>
+          </tr>
+        </table>
   </div>
 
   <div class="cafe-info">
@@ -127,7 +233,7 @@
       </tr>
       <tr>
         <td>
-          <a class="phone" href="tel:98158282">Tlf: 98 15 82 82</a>
+          <a class="phone" href="tel:004598158282">Tlf:+45 98 15 82 82</a>
         </td>
       </tr>
       <tr>
@@ -136,8 +242,8 @@
     </table>
   </div>
 
-  <div class="cafe-posts">
-    <div class="fb-page" data-href="https://www.facebook.com/CafeCampusAAU" data-tabs="timeline, messages" data-width="500" data-height="900" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/CafeCampusAAU" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CafeCampusAAU">Café Campus AAU</a></blockquote></div>
+  <div class="cafe-discounts">
+    <h2>Discounts will go here</h2>
   </div>
 
   <div class="cafe-reviews">
